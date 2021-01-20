@@ -12,3 +12,18 @@
   background-color: #fff;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
 }
+
+.dropdown-menu-right {
+    top: 48px;
+}
+
+.task-completed {
+    text-decoration: line-through;
+}
+
+.task-checkbox {
+    margin-top: 0.7rem !important;
+    margin-right: 0.7rem !important;
+}
+
+
