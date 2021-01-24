@@ -8,8 +8,18 @@
                 <h4 class="card-title">{{ $thread->title }}</h4>
             </div>
             <div class="card-body">
-                <div class="card-text">{{ $thread->body }}</div>
+                {{ $thread->body }}
             </div>
         </div>
+        @foreach ($thread->replies as $reply)
+            <div class="card mb-3">
+                <div class="card-header">
+                    {{ $reply->owner->name }} said {{ $reply->created_at->diffForHumans() }}
+                </div>
+                <div class="card-body">
+                    {{ $reply->body }}
+                </div>
+            </div>
+        @endforeach
     </div>
 @endsection

@@ -2,6 +2,7 @@
 
 use Illuminate\Database\Seeder;
 use App\Thread;
+use App\Reply;
 
 class DatabaseSeeder extends Seeder
 {
@@ -13,5 +14,6 @@ class DatabaseSeeder extends Seeder
     public function run()
     {
         factory(Thread::class, 50)->create();
+        factory(Reply::class, 50)->create();
     }
 }
