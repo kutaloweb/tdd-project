@@ -15,5 +15,13 @@
         @foreach ($thread->replies as $reply)
             @include('threads.reply')
         @endforeach
+
+        @if (auth()->check())
+            <form method="POST" action="{{ $thread->path() . '/replies' }}">
+                @csrf
+                <textarea class="form-control mb-3" id="body" name="body" rows="3"></textarea>
+                <button type="submit" class="btn btn-primary btn-sm">Comment</button>
+            </form>
+        @endif
     </div>
 @endsection

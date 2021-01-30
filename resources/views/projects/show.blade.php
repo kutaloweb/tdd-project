@@ -3,7 +3,7 @@
 @section('content')
     <div class="container">
         <h2 class="text-muted text-center mb-3">Project</h2>
-        <a class="btn btn-dark mb-3 btn-sm" href="{{ $project->path().'/edit' }}">Edit Project</a>
+        <a class="btn btn-success mb-3 btn-sm" href="{{ $project->path().'/edit' }}">Edit Project</a>
         <span class="mb-3 float-right">
             <a href="/projects" class="text-muted">My projects</a> / {{ $project->title }}
         </span>

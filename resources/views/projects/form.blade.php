@@ -17,7 +17,7 @@
         name="description"
         rows="4">{{ $project->description }}</textarea>
 </div>
-<button type="submit" class="btn btn-primary mr-3">{{ $buttonText }}</button>
+<button type="submit" class="btn btn-primary btn-sm mr-3">{{ $buttonText }}</button>
 <a href="{{ $project->path() }}">Cancel</a>
 
 @include ('errors')

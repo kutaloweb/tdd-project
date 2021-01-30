@@ -4,7 +4,7 @@
         <div class="form-group">
             <input type="text" class="form-control" placeholder="Email address" name="email">
         </div>
-        <button type="submit" class="btn btn-primary">Invite</button>
+        <button type="submit" class="btn btn-primary btn-sm">Invite</button>
     </form>
     @include ('errors', ['bag' => 'invitations'])
 </div>
